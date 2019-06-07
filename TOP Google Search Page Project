@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Google Search Page</title>
+</head>
+
+<style>
+  
+  body {
+    font-family: arial, sans-serif;
+    background-color: white;
+    margin: 0px;
+  }
+  
+  i {
+    font-style: normal;
+  }
+  
+  body h2, h3, p {
+    margin-left: 10%;
+  }
+  
+  body p {
+    color: #545454;
+  }
+  
+  header {
+    width: 100%;
+    border-bottom: 1px solid #E8E8E8;
+  }
+  
+  header ul {
+    margin-top: 5%;
+    margin-left: 7%;
+  }
+  
+  header li {
+    display: inline;
+    padding: 10px;
+  }
+  
+  header a:link {
+    text-decoration: none;
+    color: #545454;
+  }
+  
+  header a:visited {
+    text-decoration: none;
+    color: #545454;
+  }
+  
+  header a:hover {
+    text-decoration: none;
+    color: black;
+  }
+  
+  header a:active {
+    text-decoration: none;
+    color: blue;
+  }
+  
+  #navbar {
+    display: block;
+    position: fixed;
+    overflow: hidden;
+    background-color: white;
+    width: 100%;
+  }
+  
+  #navbar-logo {
+    width: 130px;
+    height: 65px;
+    float: left;
+    margin-left: 1%;
+    margin-top: .7%;
+  }
+  
+  .form-control {
+    border-radius: 30px;
+    width: 45%;
+    height: 37px;
+    float: left;
+    margin-top: 1.5%;
+  }
+  
+  #profile-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    float: left;
+    position: relative;
+    margin-top: 25px;
+    margin-left: 40%;
+  }
+  
+  h2 {
+    color: blue;
+    font-weight: none;
+    margin-top: 5%;
+  }
+  
+  h3 {
+    margin-top: 5%;
+  }
+  
+  .website-link {
+    color: green;
+  }
+  
+  #people-ask {
+    color: gray;
+  }
+  
+  #related-questions {
+    margin-top: 5%;
+  }
+  
+  #related-questions li {
+    border: 1px solid #E8E8E8;
+    border-radius: 2px;
+    width: 90%;
+    margin-left: 5%;
+    height: 50px;
+  }
+  
+  #related-questions h3 {
+    margin-top: 1em;
+  }
+  
+  #feedback {
+    margin-left: 85%;
+  }
+  
+  #img-row {
+    margin-left: 10%;
+  }
+  
+  .preview-images {
+      width: 125px;
+      height: 95px;
+}
+  
+  #more-img {
+    color: blue;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  
+  #related-searches {
+    margin-left: 7.5%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+  }
+
+  
+  #related-searches a:link {
+    color: blue;
+    text-decoration: none;
+  }
+  
+  #related-searches a:visited {
+    color: purple;
+  }
+  
+  #related-searches a:hover {
+    text-decoration: underline;
+  }
+  
+  footer {
+    width: 100%;
+    background-color: #F8F8F8;
+    overflow: hidden;
+    border-top: 1px solid #E8E8E8; 
+  }
+  
+  footer ul {
+    text-align: center;
+    display: inline-block;
+    padding-left: 10%;
+  }
+  
+  footer li {
+    display: inline;
+    padding: 5px;
+  }
+  
+  section {
+    float: left;
+    width: 55%;
+    font-size: 90%;
+    margin-left: 5%;
+  }
+  
+  aside {
+    float: right;
+    width: 30%;
+    margin-top: 2%;
+    margin-right: 5%;
+    border: 1px solid #E8E8E8;
+  }
+  
+  aside h1 {
+    margin-left: 3%;
+  }
+  
+  aside p {
+    margin-left: 3%;
+  }
+  
+  aside h3 {
+    margin-left: 3%;
+  }
+  
+  #plan-trip {
+    color: gray;
+  }
+  
+  aside img {
+    width: 212px;
+    height: 160px;
+  }
+  
+  .attractions-images {
+    width: 72px;
+    height: 72px;
+    margin-left: 2%;
+  }
+  
+  .items-images {
+    width: 72px;
+    height: 72px;
+    margin-left: 2%;
+  }
+  
+</style>
+  
+<body>
+<header>
+    <nav class="navbar" id="navbar">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="https://www.google.com/"><img id="navbar-logo" src="https://cdn.vox-cdn.com/thumbor/Pkmq1nm3skO0-j693JTMd7RL0Zk=/0x0:2012x1341/1200x800/filters:focal(0x0:2012x1341)/cdn.vox-cdn.com/uploads/chorus_image/image/47070706/google2.0.0.jpg" alt="Google logo"></a>
+        </div>
+        <div>
+        <form class="navbar-form" role="search">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="" name="search-term" id="search-term">
+        </div>
+        </form>
+        </div>
+     <div>
+   <a href=""><img id="profile-icon" src="https://i.stack.imgur.com/34AD2.jpg" alt="Profile Image">
+   </a>
+        </div>
+              </nav>
+        <br>
+        <ul>
+            <li><a href="#All">All</a></li>
+            <li><a href="Maps">Maps</a></li>
+            <li><a href="Images">Images</a></li>
+            <li><a href="News">News</a></li>
+            <li><a href="Videos">Videos</a></li>
+            <li><a href="More">More</a></li>
+            <li><a href="Settings">Settings</a></li>
+            <li><a href="Tools">Tools</a></li>
+        </ul>
+    </div>
+
+</header>
+
+<aside>  
+<div>
+    <a href=""><img src="http://www.fallriverharbormaster.org/uploads/2/4/3/2/24320865/7170615_orig.jpg" alt="Fall River Img"></a>
+    <a href=""><img src="https://www.jambase.com/wp-content/uploads/staticmaps/t/391908-the-black-rabbit/the-black-rabbit-map-large.png" alt="Fall River map"></a>
+</div>
+<div>
+    <h1>Fall River</h1>
+    <p>City in Massachusetts</p>
+</div>
+<div>
+    <p>Fall River is a North American city located in the state of Massachusetts, in the County of Bristol, with 91,938 inhabitants in the year 2000. Destination of Portuguese emigration in the beginning of the century. XX, especially of the Azores. Fall River is considered the soccer city of the United States. <a href="https://pt.wikipedia.org/wiki/Fall_River_(Massachusetts)">Wikipedia</a></p>
+    <p>Area : 40.3 mi²</p>
+    <p>Weather : 23 ° C, wind N at 18 km / h, humidity 70%</p>
+    <p>Local Time : Thursday, 13:44</p>
+    <p>Population : 89,420 (2017)</p>
+    <p>Colleges and universities : <a href="https://www.google.com/search?lr=&sa=X&hl=pt-BR&biw=1440&bih=742&q=fall+river+bristol+community+college&stick=H4sIAAAAAAAAAOPgE-LQz9U3KKksMFXiBLGMqioq87SUspOt9HPykxNLMvPz4Ayr0rzMstSi4sySzNTiRawqaYk5OQpFICGFpKLM4pL8HIXk_NxcoKqSSiArJyc1PRUA6cwCOmIAAAA&ved=2ahUKEwjyn6-otNXiAhWIhJ4KHVXCAJAQmxMoATAiegQIERAD">Bristol Community College</a> , <a href="https://www.google.com/search?lr=&sa=X&hl=pt-BR&biw=1440&bih=742&q=fall+river+faculdades+e+universidades&stick=H4sIAAAAAAAAAOPgE-LQz9U3KKksMNVSyk620s_JT04syczPgzOsSvMyy1KLijNLMlOLF7GqpiXm5CgUgYQU0hKTS3NSElNSixVSFWDKwHwABbymlFgAAAA&ved=2ahUKEwjyn6-otNXiAhWIhJ4KHVXCAJAQ44YBKAIwInoECBEQBA">MORE</a></p> 
+</div>
+<div>    
+    <h3>Points of Interest</h3>
+    <a href=""><img class="attractions-images" src="https://i.pinimg.com/originals/84/97/21/849721cd45321ca24fe1aaba9c3347a9.jpg"></a>
+    <a href=""><img class="attractions-images" src="https://upload.wikimedia.org/wikipedia/commons/6/63/Borden_House_Present.jpg"></a>
+    <a href=""><img class="attractions-images" src="https://www.savebuzzardsbay.org/wp-content/uploads/2017/01/places-to-go_freetown-fall-river-state-forest-1-800x535.jpg"></a>
+    <a href=""><img class="attractions-images" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/USS_Massachusetts_%28BB-59%29_underway_c1944.jpg/300px-USS_Massachusetts_%28BB-59%29_underway_c1944.jpg"></a>
+    <a href=""><img class="attractions-images" src="https://s3-us-west-1.amazonaws.com/gamingtoday.filesystem.assets/webroot/files/articles/77259/Twin_River_Tiverton_Casino_455x339.jpg"></a>
+</div>
+
+<div>
+    <h3>Items Also Visited</h3>
+    <a href=""><img class="items-images" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Engine_8%2C_New_Bedford%2C_Massachusetts.jpg/220px-Engine_8%2C_New_Bedford%2C_Massachusetts.jpg"></a>
+    <a href=""><img class="items-images" src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Flag_of_Massachusetts.svg"></a>
+    <a href=""><img class="items-images" src="https://upload.wikimedia.org/wikipedia/commons/4/48/Taunton_Green_Statue.jpg"></a>
+    <a href=""><img class="items-images" src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Flag_of_Boston.jpg"></a>
+    <a href=""><img class="items-images" src="https://upload.wikimedia.org/wikipedia/commons/e/ea/North_Main_Street%2C_Brockton_MA.jpg"></a>
+</div>
+
+<div>
+    <h3 id="plan-trip">Plan a trip and overview</h3>
+</div>
+</aside>
+
+  
+  
+<section>
+  
+<h2>Official Municipal Website of the City of Fall River, Massachusetts ...</h2>
+<p class="website-link">https://www.fallriverma.org/</p>
+<p>Welcome to Fall RiverMassachusetts ... Because they can make it here, in Fall River, whether it's a device, a dream, a destination, or the chance at a fresh start at ...</p>
+
+<h2>Fall River (Massachusetts) - Simple English Wikipedia, the free encyclopedia</h2>
+<p class="website-link">https://en.wikipedia.org/wiki/Fall_River_(Massachusetts)</p>
+<p>Fall River is an American city located in the state of Massachusetts , in the County of Bristol, with 91,938 inhabitants in 2000. Destination of ...</p>
+<p><strong>Population (2000) :</strong> 91 938 inhab. (Hab./ 929 square kilometers )</p>
+<p><strong>Established :</strong> 1656 (363 years)</p>
+<p><strong>Altitude :</strong> 61 m</p>
+<p><strong>County :</strong> Bristol County</p>
+
+<h2>Fall River, Massachusetts - Wikipedia</h2>
+<p class="website-link">https://en.wikipedia.org/wiki/Fall_River,_Massachusetts</p>
+<p>Fall River is a city in Bristol County, Massachusetts , United States. The City of Fall River is approximately 53 miles (85 km) south of Boston, 17 miles (27 ...</p>
+<p><strong>County :</strong> Bristol</p>
+<p><strong>Area code (s) :</strong> 508 / 774</p>
+<p><strong>Incorporated :</strong> 1803</p>
+<p><strong>Elevation :</strong> 74 ft (37 m)</p>
+
+<div>
+  <ul id="related-questions">
+    <li><h3 id="people-ask">People also ask</h3></li>
+    <li><h3>What is Fall River MA known for?</h3></li>
+    <li><h3>What is there to do in Fall River today?</h3></li>
+    <li><h3>What county is Fall River MA in?</h3></li>
+    <li><h3>What district is Fall River MA?</h3></li>
+ </ul>
+<p id="feedback">Feedback</p>
+</div>
+
+<h2>Fall River 2019: Best of Fall River, MA Tourism - TripAdvisor</h2>
+<p class="website-link">https://www.tripadvisor.com> United States> Massachusetts (MA)</p>
+<p>Fall River Tourism: TripAdvisor has 6663 reviews of Fall River Hotels, Attractions, and Restaurants making it your best Fall River resource.</p>
+
+<h2>THE 15 BEST Things to Do in Fall River - 2019 (with Photos ...</h2>
+<p class="website-link">https://www.tripadvisor.com> ...> Massachusetts (MA)> Fall River</p>
+<p>Things to Do in Fall River , Massachusetts : See Traveler Reviews and photos of Fall River tourist attractions. Find what to do today, this ...</p>
+
+<h2>Images of fall river massachusetts</h2>
+<div id="img-row">
+<a href=""><img class="preview-images" src="https://upload.wikimedia.org/wikipedia/commons/7/73/Bank_Street_Fall_River.jpg" alt="Downtown Fall River"></a>
+<a href=""><img class="preview-images" src="https://trailsandwalksri.files.wordpress.com/2016/03/twri-frwf01.jpg" alt="Fall River boardwalk"></a>
+<a href=""><img class="preview-images" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/St._Anne%27s_Church_and_Parish_Complex_Fall_River_massachusetts.jpg/220px-St._Anne%27s_Church_and_Parish_Complex_Fall_River_massachusetts.jpg" alt="Fall River Church"></a>
+<a href=""><img class="preview-images" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/North_Main_Street%2C_Fall_River%2C_MA.jpg/300px-North_Main_Street%2C_Fall_River%2C_MA.jpg" alt="Fall River North Main Street"></a>
+<a href=""><img class="preview-images" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Battleship_Cove_FR.jpg/300px-Battleship_Cove_FR.jpg" alt="Fall River Battleship"></a>
+</div>
+<p id="more-img">More images for fall river massachusetts</p>
+<!-- <p>Report images</p> -->
+
+
+<h2>Fall River, Massachusetts (MA) profile: population, maps, real estate ...</h2>
+<p class="website-link">www.city-data.com/city/Fall-River-Massachusetts.html</p>
+<p>Submit your own pictures of this city and show them to the World See promotion details and upload your Fall River , Massachusetts photos. OSM Map; General  ...</p>
+
+<h2>Things to do in Fall River, Massachusetts | Facebook</h2>
+<p class="website-link">https: //www.facebook.com / ... Fall-River-Massachusetts / 10310049 ...</p>
+<p>Discover Fall River , Massachusetts with the help of your friends. Search for restaurants, hotels, museums and more.</p>
+
+<h2>Fall River, MA - Fall River, Massachusetts Map & Directions - MapQuest</h2>
+<p class="website-link">https://www.mapquest.com/.../ massachusetts / fall-river-ma-282039 ...</p>
+<p>Get directions, maps, and traffic for Fall River , MA . Check-in Check-out Adults 1 2 3 4 CHECK RATES!</p>
+
+<h2>Fall River Real Estate - Fall River MA Homes For Sale | Zillow</h2>
+<p class="website-link">https://www.zillow.com/fall-river-ma/</p>
+<p>Zillow has 318 homes for sale in Fall River MA . View listing photos, review sales history, and use our detailed real estate filters to find the perfect place.</p>
+
+<h3>Searches related to fall river massachusetts</h3>
+    <ul id="related-searches">
+        <li><a href="https://www.google.com/search?lr=&hl=pt-BR&biw=1440&bih=742&tbs=lr:lang_1pt-BR&q=fall+river+boston&sa=X&ved=2ahUKEwj7wazsn9PiAhXD3J4KHfceA2oQ1QIoAHoECAwQAQ">fall river boston</a></li>
+        <li><a href="https://www.google.com/search?lr=&hl=pt-BR&biw=1440&bih=742&tbs=lr:lang_1pt-BR&q=fall+river+temperature&sa=X&ved=2ahUKEwj7wazsn9PiAhXD3J4KHfceA2oQ1QIoAXoECAwQAg">fall river temperature</a></li>
+        <li><a href="https://www.google.com/search?lr=&hl=pt-BR&biw=1440&bih=742&tbs=lr:lang_1pt-BR&q=fall+river+zip+code&sa=X&ved=2ahUKEwj7wazsn9PiAhXD3J4KHfceA2oQ1QIoAnoECAwQAw">fall river zip code</a></li>
+        <li><a href="https://www.google.com/search?lr=&hl=pt-BR&biw=1440&bih=742&tbs=lr:lang_1pt-BR&q=escolas+em+fall+river&sa=X&ved=2ahUKEwj7wazsn9PiAhXD3J4KHfceA2oQ1QIoA3oECAwQBA">escolas em fall river</a></li>
+    </ul>
+
+<div>
+<table id="Google-Navigation">
+    <tbody>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    </tbody>
+</table>
+</div>
+  
+  </section>  
+
+  
+
+
+<footer id="footer">
+              <p><strong>94606, Oakland, CA</strong> - From Your IP Address - Use Precise Location  -  <a href="https://support.google.com/websearch/answer/179386?p=ws_settings_location&hl=pt-BR&visit_id=636954397735554438-1094571503&rd=1">Learn More</a></p>
+  <div class="table">
+    <ul>
+        <li><a href="https://support.google.com/websearch/?visit_id=636954397735554438-1094571503&hl=pt-BR&rd=2#topic=3378866">Help</a></li>
+        <li><a href="">Send feedback</a></li>
+        <li><a href="https://policies.google.com/privacy?hl=pt-BR&gl=us">Privacy</a></li>
+        <li><a href="https://policies.google.com/terms?hl=pt-BR&gl=us">Terms</a></li>
+    </ul>
+ </div>
+</footer>
+
+
+</body>
+</html>
